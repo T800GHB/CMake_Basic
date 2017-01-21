@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(HELLO)
+set(LIB_LIST hello.cpp)
+set(APP_LIST main.cpp)
+add_library(lib_hello ${LIB_LIST})
+add_executable(hello ${APP_LIST})
+set_target_properties(lib_hello PROPERTIES OUTPUT_NAME "hello")
+target_link_libraries(hello lib_hello)
