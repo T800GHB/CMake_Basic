@@ -1,0 +1,5 @@
+set(LIB_LIST hello.cpp)
+add_definitions("-DLIBHELLO_BULID")
+add_library(say_hello SHARED ${LIB_LIST})
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+set_target_properties(say_hello PROPERTIES VERSION 1.5 SOVERSION 2)
