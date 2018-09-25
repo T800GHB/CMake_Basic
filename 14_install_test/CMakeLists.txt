@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.8)
 
-project (PowerPower)
+project (PowerDemo)
 
 # Add support for gdb debug
 set(CMAKE_BUILD_TYPE "Debug")
